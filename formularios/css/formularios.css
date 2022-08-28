@@ -1,12 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
+#sct-registro {
+    display: flex;
+    justify-content: center;
+}
+
 #frm-registro {
-    width: 40%;
     border: 2px solid purple;
+    border-radius: 10px;
+    padding: 3%;
+    width: 40%;
+}
+
+#frm-registro header {
+    background: #F9F2FA;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    height: 50px;
+    margin-bottom: 15px;
 }
 
 #frm-registro .fila {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 #frm-registro .fila .columna {
@@ -25,4 +52,39 @@
     display: flex;
     flex-direction: column;
     width: calc(100%/3.2);
+}
+
+#frm-registro label {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+#frm-registro input,
+#frm-registro select {
+    border: 1.5px solid #D1D1D1;
+    border-radius: 5px;
+    color: #686767;
+    height: 40px;
+    outline: none;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+/* ::placeholder {
+
+} */
+
+.btn-morado {
+    border: 1px #A46B9F solid;
+    border-radius: 5px;
+    background: #A46B9F;
+    color: #fff;
+    height: 40px;
+}
+
+.btn-morado:hover {
+    background: #95428f;
+    cursor: pointer;
 }
