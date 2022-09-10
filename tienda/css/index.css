@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.redes {
+    color: #3D4246;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* Inicio estilos: sección oferta */
+
+#sct-ofertas {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 70%;
+}
+
+#sct-ofertas .img-container {
+    width: 50%;
+}
+
+#sct-ofertas .img-container img {
+    width: 100%;
+}
+
+#sct-ofertas .info {
+    padding-left: 3%;
+    width: 50%;
+}
+
+#sct-ofertas .info h2 {
+    color: #3D4246;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#sct-ofertas .info h3 {
+    color: #3D4246;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#sct-ofertas .info p {
+    color: #69727b;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+#sct-ofertas .info p span {
+    font-weight: bold;
+}
+
+
+/* Fin estilos: sección oferta */
+
+
+/* Inicio estilos: sección colores */
+
+#sct-colores {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 70%;
+}
+
+.caja {
+    align-items: center;
+    border: 2px solid #000;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 50%;
+}
+
+.verde {
+    background: #A3CB38;
+}
+
+.amarillo {
+    background: #FFC312;
+}
+
+.rojo {
+    background: #EA2027;
+}
+
+.azul {
+    background: #0652DD;
+}
+
+@media all and (max-width: 576px) {
+    #sct-colores {
+        flex-direction: column;
+    }
+    .caja {
+        width: 100%;
+    }
+    .amarillo {
+        order: 0;
+    }
+    .azul {
+        order: 1;
+    }
+    .verde {
+        display: none;
+        order: 2;
+    }
+    .rojo {
+        order: 3;
+    }
+}
+
+@media all and (max-width: 992px) {
+    #sct-ofertas {
+        flex-direction: column;
+    }
+    #sct-ofertas .img-container {
+        width: 100%;
+    }
+    #sct-ofertas .info {
+        width: 100%;
+    }
+}
